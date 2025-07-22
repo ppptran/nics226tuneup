@@ -89,6 +89,6 @@ Also in this proxmox file, under bridge: // make sure your bridge and bind port 
        In ROS VM Hardware SCSI setting:
        Select : VirtIO SCSI // do not select the VirtIO SCSI-single.
 
-
+![Example Image](vmproxmoxchr.png).
    
 
