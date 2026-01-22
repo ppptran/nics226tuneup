@@ -8,6 +8,7 @@ This guide is written for CWWK N100 systems with:
 
 Goal: reduce latency, stabilize throughput, and improve packet processing.
 
+
 ---
 
 ## ⚙️ 1. NIC Tuning (Proxmox)
@@ -127,6 +128,14 @@ Storage Controller:
 - Ideal for MikroTik CHR, firewall, and routing workloads
 
 ---
+
+## 🧠 5. Disable ASMP
+
+    nano /etc/default/grub
+
+    GRUB_CMDLINE_LINUX_DEFAULT="... pcie_port_pm=off pcie_aspm.policy=performance"
+
+    update-grub
 
 ## ❤️ Credits
 
