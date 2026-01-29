@@ -133,7 +133,7 @@ Storage Controller:
 
     nano /etc/default/grub
 
-    GRUB_CMDLINE_LINUX_DEFAULT="... pcie_port_pm=off pcie_aspm.policy=performance"
+    GRUB_CMDLINE_LINUX_DEFAULT="... intel_idle.max_cstate=1 pcie_port_pm=off pcie_aspm.policy=performance"
 
     update-grub
 
