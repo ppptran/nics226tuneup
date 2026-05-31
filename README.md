@@ -109,7 +109,7 @@ Apply:
 
 ---
 Check:
- lsmod | grep bbr
+ -lsmod | grep bbr
  
 should return this: 
 tcp_bbr                24576  23
@@ -117,7 +117,7 @@ tcp_bbr                24576  23
 
 sysctl net.ipv4.tcp_congestion_control
 
-should return this: 
+-should return this: 
 
 net.ipv4.tcp_congestion_control = bbr
 
