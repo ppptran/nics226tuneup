@@ -87,9 +87,9 @@ The post-up line, one for each bridge
 
 ## 📈 3. Increase Network Buffers
 
-Edit sysctl configuration:
+Create a new sysctl.d file: // this will keep persistence after reboot
 
-    nano /etc/sysctl.conf
+    nano /etc/sysctl.d/99-bbr.conf
 
 Add:
 
