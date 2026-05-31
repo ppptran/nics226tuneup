@@ -108,6 +108,16 @@ Apply:
     sysctl -p
 
 ---
+Check:
+ lsmod | grep bbr
+should return this: 
+tcp_bbr                24576  23
+
+
+sysctl net.ipv4.tcp_congestion_control
+should return this: 
+
+net.ipv4.tcp_congestion_control = bbr
 
 ## 🧠 4. MikroTik CHR VM / X86 VM Optimization
 
