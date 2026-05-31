@@ -138,6 +138,9 @@ Storage Controller:
 
     update-grub
 
+    // check if cstate is =1 or not. If = 1 is ok. (some chinese beikong N100 router tend to go to deepsleep)
+    cat /sys/module/intel_idle/parameters/max_cstate 
+
 ## ❤️ Credits
 
 - Proxmox VE
