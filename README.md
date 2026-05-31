@@ -105,7 +105,7 @@ Add:
 
 Apply:
 
-    sysctl -p
+    sysctl --system
 
 ---
 Check:
